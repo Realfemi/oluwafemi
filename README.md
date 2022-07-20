@@ -1,2 +1,13 @@
-# oluwafemi
-domain_name="terraform.womzy.xyz"  ssl_cert="ssl-certificate" instance_template="lb-use-case-instance-template" vpc_network="lb-network" vpc_subnet="lb-subnet" region="europe-north1" zone="europe-north1-a" lb_ip_address="lb-static-ip" mig_name="lb-use-case-mig" firewall_rule="allow-health-checks-fwr" health_check="health-check" backend_service="backend-service" url_map="url-map" proxy_name="https-target-proxy" forwarding_rule="forwarding-rule" project="terraform-testing-olu"
+# terraform-lb
+
+
+First, install terraform with chocolatey package manager
+
+
+Run terraform from the same directory as where you have the terraform code
+
+terraform init
+terraform plan (to confirm if the configurations are exactly what you want and to see if you have made any mistakes)
+terraform apply
+
+If you need to delete the infrastructure afterwards, use terraform destroy
